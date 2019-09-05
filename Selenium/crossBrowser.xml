@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regration_CrossBrowser" parallel="tests">
+  <test thread-count="5" name="TestInFirefoxBrowser">
+  <parameter name="browser" value="firefox" ></parameter>
+    <classes>
+      <class name="testNg.CrossBrowserCompitability"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="TestInChromeBrowser">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="testNg.CrossBrowserCompitability"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="TestInInternetBrowser">
+  <parameter name="browser" value="ie"></parameter>
+    <classes>
+      <class name="testNg.CrossBrowserCompitability"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

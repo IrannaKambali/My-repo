@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CrossflatformSuite" parallel="tests">
+  <test thread-count="5" name="TestInWindows_forefox">
+  <parameter name="node" value="http://localhost:4444/wd/hub"></parameter>
+  <parameter name="browser" value="firefox" ></parameter>
+    <classes>
+      <class name="testNg.CrossPlatformTesting"/>
+    </classes>
+  </test> <!-- Test -->
+   <test thread-count="5" name="TestInWindows_chrome">
+  <parameter name="node" value="http://localhost:4444/wd/hub"></parameter>
+  <parameter name="browser" value="chrome" ></parameter>
+    <classes>
+      <class name="testNg.CrossPlatformTesting"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regration_CrossBrowser]" parallel="tests">
+  <test name="TestInInternetBrowser(failed)" parallel="tests">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="testNg.CrossBrowserCompitability">
+        <methods>
+          <include name="runInMultipleBrowser" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testNg.CrossBrowserCompitability -->
+    </classes>
+  </test> <!-- TestInInternetBrowser(failed) -->
+  <test name="TestInFirefoxBrowser(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="testNg.CrossBrowserCompitability">
+        <methods>
+          <include name="runInMultipleBrowser" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testNg.CrossBrowserCompitability -->
+    </classes>
+  </test> <!-- TestInFirefoxBrowser(failed) -->
+</suite> <!-- Failed suite [Regration_CrossBrowser] -->
