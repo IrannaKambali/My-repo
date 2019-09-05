@@ -18,6 +18,8 @@ public class FirstScript
 
 		Navigation nav=driver.navigate();
 		nav.to("http//:www.google.com");
+		
+		//added lines
 	}
 
 }
